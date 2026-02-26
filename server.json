@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.agentbase1/openclaw-registry",
+  "name": "io.github.izworskic/openclaw-registry",
   "title": "OpenClaw Agent Instruction Registry",
   "description": "Search and retrieve agent instruction files: system prompts, skills, workflows, and safety filters.",
   "version": "1.0.0",
