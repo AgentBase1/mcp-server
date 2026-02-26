@@ -1,0 +1,105 @@
+# openclaw-mcp
+
+MCP server for the [OpenClaw](https://openclaw-sandy-eight.vercel.app) agent instruction registry. Gives any MCP-compatible AI agent direct access to search and retrieve instruction files.
+
+## What It Does
+
+OpenClaw is an open registry of agent instruction files — system prompts, skills, workflows, domain packs, safety filters, and orchestration patterns. This MCP server wraps the registry's HTTP endpoints and exposes them as structured tools.
+
+**Tools:**
+- `search_registry` — search by keyword, category, quality score
+- `get_instruction` — fetch a full instruction file (or just the deployable text)
+- `list_categories` — see all categories with file counts
+- `get_featured` — get all quality 90+ featured files
+
+## Install
+
+```bash
+npm install -g openclaw-mcp
+```
+
+Or use npx (no install):
+```bash
+npx openclaw-mcp
+```
+
+## Configure
+
+### Claude Desktop
+
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
+
+```json
+{
+  "mcpServers": {
+    "openclaw": {
+      "command": "npx",
+      "args": ["openclaw-mcp"]
+    }
+  }
+}
+```
+
+### Claude Code
+
+```bash
+claude mcp add openclaw npx openclaw-mcp
+```
+
+### Continue (VS Code)
+
+```json
+{
+  "experimental": {
+    "modelContextProtocolServers": [
+      {
+        "transport": {
+          "type": "stdio",
+          "command": "npx",
+          "args": ["openclaw-mcp"]
+        }
+      }
+    ]
+  }
+}
+```
+
+### Any MCP Host
+
+```json
+{
+  "command": "npx",
+  "args": ["openclaw-mcp"]
+}
+```
+
+## Usage Examples
+
+Once connected, you can ask your AI agent:
+
+- *"Search OpenClaw for safety filter instructions"*
+- *"Find a customer support system prompt"*
+- *"What categories of instruction files are available?"*
+- *"Get the structured web research skill and show me just the instruction text"*
+- *"Find featured orchestration patterns"*
+
+## Direct API (no MCP)
+
+The registry also has HTTP endpoints:
+
+```
+GET https://openclaw-sandy-eight.vercel.app/registry/index.json
+GET https://openclaw-sandy-eight.vercel.app/registry/[slug].md
+GET https://openclaw-sandy-eight.vercel.app/api/search?q=research&min_quality=85
+GET https://openclaw-sandy-eight.vercel.app/llms.txt
+```
+
+## Registry
+
+- **Website:** https://openclaw-sandy-eight.vercel.app
+- **GitHub:** https://github.com/AgentBase1/registry
+- **Submit a file:** https://openclaw-sandy-eight.vercel.app/submit/
+
+## License
+
+MIT — do whatever you want with the server code. Individual instruction files in the registry have their own licenses (most are CC0).
