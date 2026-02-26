@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.agentbase1/openclaw-registry",
+  "title": "OpenClaw Agent Instruction Registry",
+  "description": "Search and retrieve agent instruction files: system prompts, skills, workflows, and safety filters.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/AgentBase1/mcp-server",
+    "source": "github"
+  },
+  "websiteUrl": "https://openclaw-sandy-eight.vercel.app",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "agentbase-mcp",
+      "transport": {
+        "type": "stdio"
+      },
+      "installationInstructions": "npx agentbase-mcp"
+    }
+  ]
+}
