@@ -1,6 +1,6 @@
 {
   "name": "agentbase-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for the OpenClaw agent instruction registry \u2014 search and retrieve agent instruction files",
   "type": "module",
   "bin": {
@@ -32,5 +32,5 @@
   "engines": {
     "node": ">=18"
   },
-  "mcpName": "io.github.agentbase1/openclaw-registry"
+  "mcpName": "io.github.izworskic/openclaw-registry"
 }
