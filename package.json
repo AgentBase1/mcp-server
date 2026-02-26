@@ -1,13 +1,30 @@
 {
-  "name": "openclaw-mcp",
+  "name": "agentbase-mcp",
   "version": "1.0.0",
-  "description": "MCP server for the OpenClaw agent instruction registry",
+  "description": "MCP server for the OpenClaw agent instruction registry — search and retrieve agent instruction files",
   "type": "module",
   "bin": {
-    "openclaw-mcp": "./index.js"
+    "agentbase-mcp": "./index.js"
   },
   "scripts": {
     "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "ai-agents",
+    "agent-instructions",
+    "system-prompts",
+    "llm"
+  ],
+  "author": "Chris Izworski",
+  "license": "MIT",
+  "homepage": "https://openclaw-sandy-eight.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgentBase1/mcp-server"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0"

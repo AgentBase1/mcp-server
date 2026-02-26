@@ -10,7 +10,7 @@
  *   - list_categories: List all categories with counts
  *   - get_featured: Return all featured files
  * 
- * Install: npx openclaw-mcp
+ * Install: npx agentbase-mcp
  * Config: Add to claude_desktop_config.json, Continue, or any MCP host
  */
 

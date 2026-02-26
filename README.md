@@ -1,4 +1,4 @@
-# openclaw-mcp
+# agentbase-mcp
 
 MCP server for the [OpenClaw](https://openclaw-sandy-eight.vercel.app) agent instruction registry. Gives any MCP-compatible AI agent direct access to search and retrieve instruction files.
 
@@ -15,12 +15,12 @@ OpenClaw is an open registry of agent instruction files — system prompts, skil
 ## Install
 
 ```bash
-npm install -g openclaw-mcp
+npm install -g agentbase-mcp
 ```
 
 Or use npx (no install):
 ```bash
-npx openclaw-mcp
+npx agentbase-mcp
 ```
 
 ## Configure
@@ -34,7 +34,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "openclaw": {
       "command": "npx",
-      "args": ["openclaw-mcp"]
+      "args": ["agentbase-mcp"]
     }
   }
 }
@@ -43,7 +43,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 ### Claude Code
 
 ```bash
-claude mcp add openclaw npx openclaw-mcp
+claude mcp add openclaw npx agentbase-mcp
 ```
 
 ### Continue (VS Code)
@@ -56,7 +56,7 @@ claude mcp add openclaw npx openclaw-mcp
         "transport": {
           "type": "stdio",
           "command": "npx",
-          "args": ["openclaw-mcp"]
+          "args": ["agentbase-mcp"]
         }
       }
     ]
@@ -69,7 +69,7 @@ claude mcp add openclaw npx openclaw-mcp
 ```json
 {
   "command": "npx",
-  "args": ["openclaw-mcp"]
+  "args": ["agentbase-mcp"]
 }
 ```
 
