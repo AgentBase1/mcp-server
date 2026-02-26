@@ -16,7 +16,8 @@
       "transport": {
         "type": "stdio"
       },
-      "installationInstructions": "npx agentbase-mcp"
+      "installationInstructions": "npx agentbase-mcp",
+      "version": "1.0.0"
     }
   ]
 }
