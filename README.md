@@ -1,10 +1,10 @@
 # agentbase-mcp
 
-MCP server for the [OpenClaw](https://openclaw-sandy-eight.vercel.app) agent instruction registry. Gives any MCP-compatible AI agent direct access to search and retrieve instruction files.
+MCP server for the [AgentBase](https://agentbase-sandy-eight.vercel.app) agent instruction registry. Gives any MCP-compatible AI agent direct access to search and retrieve instruction files.
 
 ## What It Does
 
-OpenClaw is an open registry of agent instruction files — system prompts, skills, workflows, domain packs, safety filters, and orchestration patterns. This MCP server wraps the registry's HTTP endpoints and exposes them as structured tools.
+AgentBase is an open registry of agent instruction files — system prompts, skills, workflows, domain packs, safety filters, and orchestration patterns. This MCP server wraps the registry's HTTP endpoints and exposes them as structured tools.
 
 **Tools:**
 - `search_registry` — search by keyword, category, quality score
@@ -32,7 +32,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 ```json
 {
   "mcpServers": {
-    "openclaw": {
+    "agentbase": {
       "command": "npx",
       "args": ["agentbase-mcp"]
     }
@@ -43,7 +43,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 ### Claude Code
 
 ```bash
-claude mcp add openclaw npx agentbase-mcp
+claude mcp add agentbase npx agentbase-mcp
 ```
 
 ### Continue (VS Code)
@@ -77,7 +77,7 @@ claude mcp add openclaw npx agentbase-mcp
 
 Once connected, you can ask your AI agent:
 
-- *"Search OpenClaw for safety filter instructions"*
+- *"Search AgentBase for safety filter instructions"*
 - *"Find a customer support system prompt"*
 - *"What categories of instruction files are available?"*
 - *"Get the structured web research skill and show me just the instruction text"*
@@ -88,17 +88,17 @@ Once connected, you can ask your AI agent:
 The registry also has HTTP endpoints:
 
 ```
-GET https://openclaw-sandy-eight.vercel.app/registry/index.json
-GET https://openclaw-sandy-eight.vercel.app/registry/[slug].md
-GET https://openclaw-sandy-eight.vercel.app/api/search?q=research&min_quality=85
-GET https://openclaw-sandy-eight.vercel.app/llms.txt
+GET https://agentbase-sandy-eight.vercel.app/registry/index.json
+GET https://agentbase-sandy-eight.vercel.app/registry/[slug].md
+GET https://agentbase-sandy-eight.vercel.app/api/search?q=research&min_quality=85
+GET https://agentbase-sandy-eight.vercel.app/llms.txt
 ```
 
 ## Registry
 
-- **Website:** https://openclaw-sandy-eight.vercel.app
+- **Website:** https://agentbase-sandy-eight.vercel.app
 - **GitHub:** https://github.com/AgentBase1/registry
-- **Submit a file:** https://openclaw-sandy-eight.vercel.app/submit/
+- **Submit a file:** https://agentbase-sandy-eight.vercel.app/submit/
 
 ## License
 
