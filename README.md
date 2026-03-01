@@ -1,6 +1,6 @@
 # agentbase-mcp
 
-MCP server for the [AgentBase](https://agentbase-sandy-eight.vercel.app) agent instruction registry. Gives any MCP-compatible AI agent direct access to search and retrieve instruction files.
+MCP server for the [AgentBase](https://agentbase-registry.vercel.app) agent instruction registry. Gives any MCP-compatible AI agent direct access to search and retrieve instruction files.
 
 ## What It Does
 
@@ -88,17 +88,17 @@ Once connected, you can ask your AI agent:
 The registry also has HTTP endpoints:
 
 ```
-GET https://agentbase-sandy-eight.vercel.app/registry/index.json
-GET https://agentbase-sandy-eight.vercel.app/registry/[slug].md
-GET https://agentbase-sandy-eight.vercel.app/api/search?q=research&min_quality=85
-GET https://agentbase-sandy-eight.vercel.app/llms.txt
+GET https://agentbase-registry.vercel.app/registry/index.json
+GET https://agentbase-registry.vercel.app/registry/[slug].md
+GET https://agentbase-registry.vercel.app/api/search?q=research&min_quality=85
+GET https://agentbase-registry.vercel.app/llms.txt
 ```
 
 ## Registry
 
-- **Website:** https://agentbase-sandy-eight.vercel.app
+- **Website:** https://agentbase-registry.vercel.app
 - **GitHub:** https://github.com/AgentBase1/registry
-- **Submit a file:** https://agentbase-sandy-eight.vercel.app/submit/
+- **Submit a file:** https://agentbase-registry.vercel.app/submit/
 
 ## License
 
