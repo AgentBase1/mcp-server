@@ -103,3 +103,4 @@ GET https://agentbase-registry.vercel.app/llms.txt
 ## License
 
 MIT — do whatever you want with the server code. Individual instruction files in the registry have their own licenses (most are CC0).
+
