@@ -2,6 +2,10 @@
 
 MCP server for the [AgentBase](https://agentbase-registry.vercel.app) agent instruction registry. Gives any MCP-compatible AI agent direct access to search and retrieve instruction files.
 
+<a href="https://glama.ai/mcp/servers/AgentBase1/mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/AgentBase1/mcp-server/badge" alt="AgentBase Server MCP server" />
+</a>
+
 ## What It Does
 
 AgentBase is an open registry of agent instruction files — system prompts, skills, workflows, domain packs, safety filters, and orchestration patterns. This MCP server wraps the registry's HTTP endpoints and exposes them as structured tools.
@@ -103,4 +107,3 @@ GET https://agentbase-registry.vercel.app/llms.txt
 ## License
 
 MIT — do whatever you want with the server code. Individual instruction files in the registry have their own licenses (most are CC0).
-
